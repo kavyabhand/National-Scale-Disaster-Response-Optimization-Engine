@@ -1,0 +1,62 @@
+[
+    {
+        "name": "4 km NW of The Geysers, CA",
+        "magnitude": 0.76,
+        "population": 500000,
+        "damage_level": 1
+    },
+    {
+        "name": "6 km SSW of P\u0101hala, Hawaii",
+        "magnitude": 1.84,
+        "population": 500000,
+        "damage_level": 3
+    },
+    {
+        "name": "56 km S of Whites City, New Mexico",
+        "magnitude": 0.8,
+        "population": 500000,
+        "damage_level": 1
+    },
+    {
+        "name": "15 km S of Nelchina, Alaska",
+        "magnitude": 1.7,
+        "population": 500000,
+        "damage_level": 3
+    },
+    {
+        "name": "45 km NW of Toyah, Texas",
+        "magnitude": 1.9,
+        "population": 500000,
+        "damage_level": 3
+    },
+    {
+        "name": "46 km NW of Toyah, Texas",
+        "magnitude": 1.6,
+        "population": 500000,
+        "damage_level": 3
+    },
+    {
+        "name": "5 km WSW of Anza, CA",
+        "magnitude": 0.24,
+        "population": 500000,
+        "damage_level": 0
+    },
+    {
+        "name": "17 km SE of Silver Springs, Nevada",
+        "magnitude": 1.94,
+        "population": 500000,
+        "damage_level": 3
+    },
+    {
+        "name": "17 km SE of Silver Springs, Nevada",
+        "magnitude": 1.87,
+        "population": 500000,
+        "damage_level": 3
+    },
+    {
+        "name": "6 km SW of Volcano, Hawaii",
+        "magnitude": 1.75,
+        "population": 500000,
+        "damage_level": 3
+    }
+]
