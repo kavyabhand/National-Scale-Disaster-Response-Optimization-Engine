@@ -37,18 +37,34 @@ int main()
     output["total_regions"] = regions.size();
     output["population_affected"] = seg.rangeQuery(0, 2);
 
+    std::vector<std::string> resources = {
+        "Team Alpha",
+        "Team Beta",
+        "Medical Unit 1",
+        "Helicopter Squad",
+        "Supply Convoy"};
+
+    int resourceIndex = 0;
+
     while (!pq.empty())
     {
         Region r = pq.extractMax();
 
-        output["priority_order"].push_back({
-            {"name", r.name},
-            {"population", r.population},
-            {"damage_level", r.damage_level},
-            {"urgency_score", r.urgency_score},
-            {"latitude", r.latitude},
-            {"longitude", r.longitude},
-        });
+        output["priority_order"].push_back({{"name", r.name},
+                                            {"population", r.population},
+                                            {"damage_level", r.damage_level},
+                                            {"urgency_score", r.urgency_score},
+                                            {"latitude", r.latitude},
+                                            {"longitude", r.longitude}});
+
+        if (resourceIndex < resources.size())
+        {
+            output["resource_allocations"].push_back({{"resource", resources[resourceIndex]},
+                                                      {"assigned_region", r.name},
+                                                      {"urgency_score", r.urgency_score}});
+
+            resourceIndex++;
+        }
     }
 
     std::ofstream file("data/results.json");
