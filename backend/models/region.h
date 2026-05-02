@@ -1,8 +1,5 @@
-#ifndef REGION_H
-#define REGION_H
-
+#pragma once
 #include <string>
-
 struct Region
 {
     int id;
@@ -10,17 +7,17 @@ struct Region
     int population;
     int damage_level;
     int urgency_score;
+    double latitude;
+    double longitude;
 
-    Region() {}
-
-    Region(int i, std::string n, int p, int d)
+    Region(int i, std::string n, int p, int d, double lat, double lon)
     {
         id = i;
         name = n;
         population = p;
         damage_level = d;
         urgency_score = p * d;
+        latitude = lat;
+        longitude = lon;
     }
 };
-
-#endif

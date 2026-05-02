@@ -9,6 +9,11 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import dynamic from "next/dynamic";
+
+const DisasterMap = dynamic(() => import("../components/DisasterMap"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
@@ -82,6 +87,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow p-6 mt-10">
+        <h2 className="text-2xl font-bold mb-4">Live Disaster Map</h2>
+        <DisasterMap data={data.priority_order} />
       </div>
     </main>
   );

@@ -1,52 +1,72 @@
 [
     {
         "name": "4 km NW of The Geysers, CA",
-        "population": 201490,
-        "damage_level": 1
+        "population": 727052,
+        "damage_level": 1,
+        "latitude": 38.8035011291504,
+        "longitude": -122.780502319336
     },
     {
         "name": "6 km SSW of P\u0101hala, Hawaii",
-        "population": 174212,
-        "damage_level": 3
+        "population": 1522252,
+        "damage_level": 3,
+        "latitude": 19.1490001678467,
+        "longitude": -155.492660522461
     },
     {
         "name": "56 km S of Whites City, New Mexico",
-        "population": 1268112,
-        "damage_level": 1
+        "population": 828976,
+        "damage_level": 1,
+        "latitude": 31.669,
+        "longitude": -104.447
     },
     {
         "name": "23 km NNE of Luquillo, Puerto Rico",
-        "population": 1868219,
-        "damage_level": 5
+        "population": 1668477,
+        "damage_level": 5,
+        "latitude": 18.5633333333333,
+        "longitude": -65.621
     },
     {
         "name": "15 km S of Nelchina, Alaska",
-        "population": 1065698,
-        "damage_level": 3
+        "population": 1720745,
+        "damage_level": 3,
+        "latitude": 61.851,
+        "longitude": -146.768
     },
     {
         "name": "45 km NW of Toyah, Texas",
-        "population": 1139662,
-        "damage_level": 3
+        "population": 1818098,
+        "damage_level": 3,
+        "latitude": 31.621,
+        "longitude": -104.117
     },
     {
         "name": "46 km NW of Toyah, Texas",
-        "population": 1487868,
-        "damage_level": 3
+        "population": 1048878,
+        "damage_level": 3,
+        "latitude": 31.623,
+        "longitude": -104.118
     },
     {
         "name": "5 km WSW of Anza, CA",
-        "population": 516047,
-        "damage_level": 1
+        "population": 289228,
+        "damage_level": 1,
+        "latitude": 33.5338333333333,
+        "longitude": -116.717833333333
     },
     {
         "name": "17 km SE of Silver Springs, Nevada",
-        "population": 989885,
-        "damage_level": 3
+        "population": 254779,
+        "damage_level": 3,
+        "latitude": 39.3074,
+        "longitude": -119.0726
     },
     {
         "name": "17 km SE of Silver Springs, Nevada",
-        "population": 1213665,
-        "damage_level": 3
+        "population": 626603,
+        "damage_level": 3,
+        "latitude": 39.3126,
+        "longitude": -119.0718
     }
 ]

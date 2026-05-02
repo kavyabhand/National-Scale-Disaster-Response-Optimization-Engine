@@ -25,7 +25,9 @@ std::vector<Region> loadSampleRegions()
                 id++,
                 item["name"],
                 item["population"],
-                item["damage_level"]));
+                item["damage_level"],
+                item["latitude"],
+                item["longitude"]));
     }
 
     return regions;

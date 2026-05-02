@@ -41,10 +41,14 @@ int main()
     {
         Region r = pq.extractMax();
 
-        output["priority_order"].push_back({{"name", r.name},
-                                            {"population", r.population},
-                                            {"damage_level", r.damage_level},
-                                            {"urgency_score", r.urgency_score}});
+        output["priority_order"].push_back({
+            {"name", r.name},
+            {"population", r.population},
+            {"damage_level", r.damage_level},
+            {"urgency_score", r.urgency_score},
+            {"latitude", r.latitude},
+            {"longitude", r.longitude},
+        });
     }
 
     std::ofstream file("data/results.json");

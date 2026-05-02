@@ -1,65 +1,85 @@
 {
-    "population_affected": 1643814,
+    "population_affected": 3078280,
     "priority_order": [
         {
             "damage_level": 5,
+            "latitude": 18.5633333333333,
+            "longitude": -65.621,
             "name": "23 km NNE of Luquillo, Puerto Rico",
-            "population": 1868219,
-            "urgency_score": 9341095
+            "population": 1668477,
+            "urgency_score": 8342385
         },
         {
             "damage_level": 3,
-            "name": "46 km NW of Toyah, Texas",
-            "population": 1487868,
-            "urgency_score": 4463604
-        },
-        {
-            "damage_level": 3,
-            "name": "17 km SE of Silver Springs, Nevada",
-            "population": 1213665,
-            "urgency_score": 3640995
-        },
-        {
-            "damage_level": 3,
+            "latitude": 31.621,
+            "longitude": -104.117,
             "name": "45 km NW of Toyah, Texas",
-            "population": 1139662,
-            "urgency_score": 3418986
+            "population": 1818098,
+            "urgency_score": 5454294
         },
         {
             "damage_level": 3,
+            "latitude": 61.851,
+            "longitude": -146.768,
             "name": "15 km S of Nelchina, Alaska",
-            "population": 1065698,
-            "urgency_score": 3197094
+            "population": 1720745,
+            "urgency_score": 5162235
         },
         {
             "damage_level": 3,
-            "name": "17 km SE of Silver Springs, Nevada",
-            "population": 989885,
-            "urgency_score": 2969655
-        },
-        {
-            "damage_level": 1,
-            "name": "56 km S of Whites City, New Mexico",
-            "population": 1268112,
-            "urgency_score": 1268112
-        },
-        {
-            "damage_level": 3,
+            "latitude": 19.1490001678467,
+            "longitude": -155.492660522461,
             "name": "6 km SSW of Pāhala, Hawaii",
-            "population": 174212,
-            "urgency_score": 522636
+            "population": 1522252,
+            "urgency_score": 4566756
+        },
+        {
+            "damage_level": 3,
+            "latitude": 31.623,
+            "longitude": -104.118,
+            "name": "46 km NW of Toyah, Texas",
+            "population": 1048878,
+            "urgency_score": 3146634
+        },
+        {
+            "damage_level": 3,
+            "latitude": 39.3126,
+            "longitude": -119.0718,
+            "name": "17 km SE of Silver Springs, Nevada",
+            "population": 626603,
+            "urgency_score": 1879809
         },
         {
             "damage_level": 1,
-            "name": "5 km WSW of Anza, CA",
-            "population": 516047,
-            "urgency_score": 516047
+            "latitude": 31.669,
+            "longitude": -104.447,
+            "name": "56 km S of Whites City, New Mexico",
+            "population": 828976,
+            "urgency_score": 828976
+        },
+        {
+            "damage_level": 3,
+            "latitude": 39.3074,
+            "longitude": -119.0726,
+            "name": "17 km SE of Silver Springs, Nevada",
+            "population": 254779,
+            "urgency_score": 764337
         },
         {
             "damage_level": 1,
+            "latitude": 38.8035011291504,
+            "longitude": -122.780502319336,
             "name": "4 km NW of The Geysers, CA",
-            "population": 201490,
-            "urgency_score": 201490
+            "population": 727052,
+            "urgency_score": 727052
+        },
+        {
+            "damage_level": 1,
+            "latitude": 33.5338333333333,
+            "longitude": -116.717833333333,
+            "name": "5 km WSW of Anza, CA",
+            "population": 289228,
+            "urgency_score": 289228
         }
     ],
     "total_regions": 10
