@@ -1,6 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
@@ -62,6 +70,21 @@ export default function Home() {
             ))}
           </tbody>
         </table>
+      </div>
+
+      <div className="bg-white rounded-xl shadow p-6 mt-10">
+        <h2 className="text-2xl font-bold mb-4">Urgency Score Analysis</h2>
+
+        <div className="w-full h-96">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={data.priority_order}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="urgency_score" fill="#2563eb" />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </main>
   );
