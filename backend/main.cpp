@@ -1,41 +1,41 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string>
 #include <nlohmann/json.hpp>
-using json = nlohmann::json;
+
 #include "models/region.h"
 #include "structures/priority_queue.h"
+#include "structures/avl_tree.h"
+#include "structures/quad_tree.h"
 #include "structures/trie.h"
-#include "structures/segment_tree.h"
-#include "structures/union_find.h"
 #include "utils/sample_data.h"
+
+using json = nlohmann::json;
 
 int main()
 {
     std::vector<Region> regions = loadSampleRegions();
 
+    // Core data structures
     PriorityQueue pq;
+    AVLTree avl;
+    QuadTree quad({-90.0, 90.0, -180.0, 180.0});
     Trie trie;
-    std::vector<int> populations;
-
-    for (auto &r : regions)
-    {
-        pq.insert(r);
-        trie.insert(r.name);
-        populations.push_back(r.population);
-    }
-
-    SegmentTree seg(populations);
-
-    UnionFind uf(regions.size());
-
-    uf.unite(0, 1);
-    uf.unite(1, 2);
 
     json output;
 
-    output["total_regions"] = regions.size();
-    output["population_affected"] = seg.rangeQuery(0, 2);
+    // Initialize JSON structure safely
+    output["total_regions"] = 0;
+    output["population_affected"] = 0;
+
+    output["priority_order"] = json::array();
+    output["resource_allocations"] = json::array();
+    output["avl_sorted_regions"] = json::array();
+
+    output["spatial_analysis"] = {
+        {"indexed_regions", 0},
+        {"partitioning", "Quad Tree Spatial Indexing Active"}};
 
     std::vector<std::string> resources = {
         "Team Alpha",
@@ -44,8 +44,25 @@ int main()
         "Helicopter Squad",
         "Supply Convoy"};
 
+    int totalPopulation = 0;
+
+    // Build all structures
+    for (const auto &region : regions)
+    {
+        pq.insert(region);
+        avl.insert(region);
+        quad.insert(region);
+        trie.insert(region.name);
+
+        totalPopulation += region.population;
+    }
+
+    output["total_regions"] = regions.size();
+    output["population_affected"] = totalPopulation;
+
     int resourceIndex = 0;
 
+    // Priority-based processing
     while (!pq.empty())
     {
         Region r = pq.extractMax();
@@ -57,7 +74,7 @@ int main()
                                             {"latitude", r.latitude},
                                             {"longitude", r.longitude}});
 
-        if (resourceIndex < resources.size())
+        if (resourceIndex < (int)resources.size())
         {
             output["resource_allocations"].push_back({{"resource", resources[resourceIndex]},
                                                       {"assigned_region", r.name},
@@ -67,6 +84,19 @@ int main()
         }
     }
 
+    // Spatial analysis summary (AFTER insertions)
+    output["spatial_analysis"]["indexed_regions"] = quad.countPoints();
+
+    // AVL sorted output (descending urgency)
+    std::vector<Region> sortedRegions = avl.getSortedDescending();
+
+    for (const auto &r : sortedRegions)
+    {
+        output["avl_sorted_regions"].push_back({{"name", r.name},
+                                                {"urgency_score", r.urgency_score}});
+    }
+
+    // Write output file
     std::ofstream file("data/results.json");
     file << output.dump(4);
     file.close();
