@@ -1,45 +1,45 @@
 {
-    "population_affected": 1500000,
+    "population_affected": 4899132,
     "priority_order": [
         {
             "name": "6 km SSW of Pāhala, Hawaii",
-            "urgency_score": 1500000
-        },
-        {
-            "name": "6 km SW of Volcano, Hawaii",
-            "urgency_score": 1500000
+            "urgency_score": 5290734
         },
         {
             "name": "17 km SE of Silver Springs, Nevada",
-            "urgency_score": 1500000
+            "urgency_score": 5088945
         },
         {
             "name": "15 km S of Nelchina, Alaska",
-            "urgency_score": 1500000
+            "urgency_score": 5003646
         },
         {
-            "name": "17 km SE of Silver Springs, Nevada",
-            "urgency_score": 1500000
-        },
-        {
-            "name": "45 km NW of Toyah, Texas",
-            "urgency_score": 1500000
+            "name": "6 km SW of Volcano, Hawaii",
+            "urgency_score": 3550965
         },
         {
             "name": "46 km NW of Toyah, Texas",
-            "urgency_score": 1500000
+            "urgency_score": 2493045
         },
         {
-            "name": "4 km NW of The Geysers, CA",
-            "urgency_score": 500000
-        },
-        {
-            "name": "56 km S of Whites City, New Mexico",
-            "urgency_score": 500000
+            "name": "17 km SE of Silver Springs, Nevada",
+            "urgency_score": 2049648
         },
         {
             "name": "5 km WSW of Anza, CA",
-            "urgency_score": 0
+            "urgency_score": 1895892
+        },
+        {
+            "name": "56 km S of Whites City, New Mexico",
+            "urgency_score": 1675485
+        },
+        {
+            "name": "4 km NW of The Geysers, CA",
+            "urgency_score": 1460069
+        },
+        {
+            "name": "45 km NW of Toyah, Texas",
+            "urgency_score": 979587
         }
     ],
     "total_regions": 10
