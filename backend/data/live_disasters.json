@@ -1,52 +1,52 @@
 [
     {
         "name": "4 km NW of The Geysers, CA",
-        "population": 1460069,
+        "population": 201490,
         "damage_level": 1
     },
     {
         "name": "6 km SSW of P\u0101hala, Hawaii",
-        "population": 1763578,
+        "population": 174212,
         "damage_level": 3
     },
     {
         "name": "56 km S of Whites City, New Mexico",
-        "population": 1675485,
+        "population": 1268112,
         "damage_level": 1
     },
     {
+        "name": "23 km NNE of Luquillo, Puerto Rico",
+        "population": 1868219,
+        "damage_level": 5
+    },
+    {
         "name": "15 km S of Nelchina, Alaska",
-        "population": 1667882,
+        "population": 1065698,
         "damage_level": 3
     },
     {
         "name": "45 km NW of Toyah, Texas",
-        "population": 326529,
+        "population": 1139662,
         "damage_level": 3
     },
     {
         "name": "46 km NW of Toyah, Texas",
-        "population": 831015,
+        "population": 1487868,
         "damage_level": 3
     },
     {
         "name": "5 km WSW of Anza, CA",
-        "population": 1895892,
+        "population": 516047,
         "damage_level": 1
     },
     {
         "name": "17 km SE of Silver Springs, Nevada",
-        "population": 683216,
+        "population": 989885,
         "damage_level": 3
     },
     {
         "name": "17 km SE of Silver Springs, Nevada",
-        "population": 1696315,
-        "damage_level": 3
-    },
-    {
-        "name": "6 km SW of Volcano, Hawaii",
-        "population": 1183655,
+        "population": 1213665,
         "damage_level": 3
     }
 ]

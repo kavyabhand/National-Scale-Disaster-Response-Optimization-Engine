@@ -1,26 +1,66 @@
 {
-    "population_affected": 1600000,
+    "population_affected": 1643814,
     "priority_order": [
         {
-            "name": "Mumbai",
-            "urgency_score": 7200000
+            "damage_level": 5,
+            "name": "23 km NNE of Luquillo, Puerto Rico",
+            "population": 1868219,
+            "urgency_score": 9341095
         },
         {
-            "name": "Nagpur",
-            "urgency_score": 3600000
+            "damage_level": 3,
+            "name": "46 km NW of Toyah, Texas",
+            "population": 1487868,
+            "urgency_score": 4463604
         },
         {
-            "name": "Pune",
-            "urgency_score": 3500000
+            "damage_level": 3,
+            "name": "17 km SE of Silver Springs, Nevada",
+            "population": 1213665,
+            "urgency_score": 3640995
         },
         {
-            "name": "Nashik",
-            "urgency_score": 1800000
+            "damage_level": 3,
+            "name": "45 km NW of Toyah, Texas",
+            "population": 1139662,
+            "urgency_score": 3418986
         },
         {
-            "name": "Kolhapur",
-            "urgency_score": 1000000
+            "damage_level": 3,
+            "name": "15 km S of Nelchina, Alaska",
+            "population": 1065698,
+            "urgency_score": 3197094
+        },
+        {
+            "damage_level": 3,
+            "name": "17 km SE of Silver Springs, Nevada",
+            "population": 989885,
+            "urgency_score": 2969655
+        },
+        {
+            "damage_level": 1,
+            "name": "56 km S of Whites City, New Mexico",
+            "population": 1268112,
+            "urgency_score": 1268112
+        },
+        {
+            "damage_level": 3,
+            "name": "6 km SSW of Pāhala, Hawaii",
+            "population": 174212,
+            "urgency_score": 522636
+        },
+        {
+            "damage_level": 1,
+            "name": "5 km WSW of Anza, CA",
+            "population": 516047,
+            "urgency_score": 516047
+        },
+        {
+            "damage_level": 1,
+            "name": "4 km NW of The Geysers, CA",
+            "population": 201490,
+            "urgency_score": 201490
         }
     ],
-    "total_regions": 5
+    "total_regions": 10
 }

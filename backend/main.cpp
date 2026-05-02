@@ -42,6 +42,8 @@ int main()
         Region r = pq.extractMax();
 
         output["priority_order"].push_back({{"name", r.name},
+                                            {"population", r.population},
+                                            {"damage_level", r.damage_level},
                                             {"urgency_score", r.urgency_score}});
     }
 
