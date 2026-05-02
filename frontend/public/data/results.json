@@ -1,0 +1,26 @@
+{
+    "population_affected": 1600000,
+    "priority_order": [
+        {
+            "name": "Mumbai",
+            "urgency_score": 7200000
+        },
+        {
+            "name": "Nagpur",
+            "urgency_score": 3600000
+        },
+        {
+            "name": "Pune",
+            "urgency_score": 3500000
+        },
+        {
+            "name": "Nashik",
+            "urgency_score": 1800000
+        },
+        {
+            "name": "Kolhapur",
+            "urgency_score": 1000000
+        }
+    ],
+    "total_regions": 5
+}
