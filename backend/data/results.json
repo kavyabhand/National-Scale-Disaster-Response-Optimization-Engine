@@ -1,26 +1,46 @@
 {
-    "population_affected": 1600000,
+    "population_affected": 1500000,
     "priority_order": [
         {
-            "name": "Mumbai",
-            "urgency_score": 7200000
+            "name": "6 km SSW of Pāhala, Hawaii",
+            "urgency_score": 1500000
         },
         {
-            "name": "Nagpur",
-            "urgency_score": 3600000
+            "name": "6 km SW of Volcano, Hawaii",
+            "urgency_score": 1500000
         },
         {
-            "name": "Pune",
-            "urgency_score": 3500000
+            "name": "17 km SE of Silver Springs, Nevada",
+            "urgency_score": 1500000
         },
         {
-            "name": "Nashik",
-            "urgency_score": 1800000
+            "name": "15 km S of Nelchina, Alaska",
+            "urgency_score": 1500000
         },
         {
-            "name": "Kolhapur",
-            "urgency_score": 1000000
+            "name": "17 km SE of Silver Springs, Nevada",
+            "urgency_score": 1500000
+        },
+        {
+            "name": "45 km NW of Toyah, Texas",
+            "urgency_score": 1500000
+        },
+        {
+            "name": "46 km NW of Toyah, Texas",
+            "urgency_score": 1500000
+        },
+        {
+            "name": "4 km NW of The Geysers, CA",
+            "urgency_score": 500000
+        },
+        {
+            "name": "56 km S of Whites City, New Mexico",
+            "urgency_score": 500000
+        },
+        {
+            "name": "5 km WSW of Anza, CA",
+            "urgency_score": 0
         }
     ],
-    "total_regions": 5
+    "total_regions": 10
 }

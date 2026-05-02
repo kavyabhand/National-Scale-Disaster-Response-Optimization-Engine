@@ -2,18 +2,31 @@
 #define SAMPLE_DATA_H
 
 #include <vector>
+#include <fstream>
+#include <nlohmann/json.hpp>
 #include "../models/region.h"
+
+using json = nlohmann::json;
 
 std::vector<Region> loadSampleRegions()
 {
+    std::ifstream file("data/live_disasters.json");
+    json data;
+    file >> data;
 
     std::vector<Region> regions;
 
-    regions.push_back(Region(1, "Pune", 500000, 7));
-    regions.push_back(Region(2, "Mumbai", 800000, 9));
-    regions.push_back(Region(3, "Nashik", 300000, 6));
-    regions.push_back(Region(4, "Nagpur", 450000, 8));
-    regions.push_back(Region(5, "Kolhapur", 200000, 5));
+    int id = 1;
+
+    for (auto &item : data)
+    {
+        regions.push_back(
+            Region(
+                id++,
+                item["name"],
+                item["population"],
+                item["damage_level"]));
+    }
 
     return regions;
 }
