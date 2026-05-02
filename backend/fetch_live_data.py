@@ -1,5 +1,6 @@
 import requests
 import json
+import random
 
 url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
 
@@ -11,11 +12,16 @@ events = []
 for quake in data["features"][:10]:
     props = quake["properties"]
 
+    magnitude = props["mag"] or 0
+
+    population = random.randint(100000, 2000000)
+
+    damage_level = min(max(int(magnitude * 2), 1), 10)
+
     events.append({
         "name": props["place"],
-        "magnitude": props["mag"] or 0,
-        "population": 500000,
-        "damage_level": min(int((props["mag"] or 0) * 2), 10)
+        "population": population,
+        "damage_level": damage_level
     })
 
 with open("data/live_disasters.json", "w") as f:
