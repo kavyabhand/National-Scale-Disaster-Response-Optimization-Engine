@@ -1,4 +1,8 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
+#include <nlohmann/json.hpp>
+using json = nlohmann::json;
 #include "models/region.h"
 #include "structures/priority_queue.h"
 #include "structures/trie.h"
@@ -8,12 +12,10 @@
 
 int main()
 {
-
     std::vector<Region> regions = loadSampleRegions();
 
     PriorityQueue pq;
     Trie trie;
-
     std::vector<int> populations;
 
     for (auto &r : regions)
@@ -30,22 +32,24 @@ int main()
     uf.unite(0, 1);
     uf.unite(1, 2);
 
-    std::cout << "Regions Loaded: " << regions.size() << std::endl;
+    json output;
 
-    std::cout << "\nPrefix Search: Pu -> ";
-    if (trie.searchPrefix("Pu"))
-        std::cout << "Found region starting with Pu\n";
-
-    std::cout << "\nTotal Population (0-2): ";
-    std::cout << seg.rangeQuery(0, 2) << std::endl;
-
-    std::cout << "\nRescue Priority Order:\n";
+    output["total_regions"] = regions.size();
+    output["population_affected"] = seg.rangeQuery(0, 2);
 
     while (!pq.empty())
     {
         Region r = pq.extractMax();
-        std::cout << r.name << " | urgency: " << r.urgency_score << std::endl;
+
+        output["priority_order"].push_back({{"name", r.name},
+                                            {"urgency_score", r.urgency_score}});
     }
+
+    std::ofstream file("data/results.json");
+    file << output.dump(4);
+    file.close();
+
+    std::cout << "Results exported to data/results.json\n";
 
     return 0;
 }

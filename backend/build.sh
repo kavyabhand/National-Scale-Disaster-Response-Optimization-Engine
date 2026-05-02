@@ -1,0 +1,1 @@
+g++ main.cpp -std=c++17 -I/opt/homebrew/opt/nlohmann-json/include -o disaster
